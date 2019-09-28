@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 
 
 
@@ -18,9 +18,9 @@ class Homepage extends Component {
 
                                 <div className='text-content text-center'>
                                         <h4> Przedszkole<br/>przy ul. Mikołaja Reja 13 </h4>
-                                        <NavLink to="/reja" className='align-middle'>
+                                        <Link to="/reja" className='align-middle'>
                                         <button className='homepage_btn'> Odwiedź stronę</button>
-                                        </NavLink>
+                                        </Link>
                                 </div>
                             </div>
 
@@ -30,9 +30,9 @@ class Homepage extends Component {
 
                                     <div className='text-content text-center'>
                                         <h4> Przedszkole <br/> przy ul. E. Radzikowskiego 92 </h4>
-                                        <NavLink to="/radzikowskiego" className='align-middle'>
+                                        <Link to="/radzikowskiego" className='align-middle'>
                                         <button className='homepage_btn'> Odwiedź stronę</button>
-                                        </NavLink>
+                                        </Link>
                                     </div>
                             </div>
 

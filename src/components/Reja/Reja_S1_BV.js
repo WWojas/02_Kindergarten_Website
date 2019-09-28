@@ -8,7 +8,7 @@ class Reja_S1_BV extends Component {
         return (
             <div>
                 <Reja_header/>
-                <img src='/images/reja_pic.jpg' className="img-fluid bg_S1_image"/>
+                <img src='/images/navbar_bg/main_bg_image.jpg' className="img-fluid bg_S1_image"/>
             </div>
 
 

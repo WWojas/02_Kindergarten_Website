@@ -23,6 +23,10 @@ class Reja_S2_Staff extends Component {
         this.changeStaff();
     }
 
+    componentWillUnmount() {
+        clearInterval(this.interval)
+    }
+
 
     changeSpan =() => {
 

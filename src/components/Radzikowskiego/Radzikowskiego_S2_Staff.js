@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 
@@ -14,8 +14,8 @@ class Radzikowskiego_S2_Staff extends Component {
 
             staff: [ "Aleksandra_Brozyna", "Dominika_Serwa", "Natalia_Kiczura", "Kinga_Kaczmarek", "Alicja_Kwasny", "Joanna_Wozniak", "Monika_Garula", "Maria_Kaczmarek" , "Dorota_Szastak", "Violetta_Wojas" ],
             indexStaff: 0,
-            indexPrev: -1
-
+            indexPrev: -1,
+            intervalId: 0
 
         }
     }
@@ -23,6 +23,10 @@ class Radzikowskiego_S2_Staff extends Component {
     componentDidMount() {
         this.changeSpan();
         this.changeStaff();
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.interval)
     }
 
 
@@ -43,7 +47,6 @@ class Radzikowskiego_S2_Staff extends Component {
 
     changeStaff =() => {
 
-
          let first_li = this.refs.images_ul.children[0].childNodes[0];
          first_li.classList.add('show');
 
@@ -51,8 +54,7 @@ class Radzikowskiego_S2_Staff extends Component {
 
             this.setState ({
                 indexStaff: this.state.indexStaff >= this.state.staff.length-1 ? 0 : this.state.indexStaff +1,
-                indexPrev: this.state.indexPrev >= this.state.staff.length-1 ? 0 : this.state.indexPrev +1
-
+                indexPrev: this.state.indexPrev >= this.state.staff.length-1 ? 0 : this.state.indexPrev +1,
             });
 
             let next_li = this.refs.images_ul.children[this.state.indexStaff].childNodes[0];
@@ -63,6 +65,7 @@ class Radzikowskiego_S2_Staff extends Component {
 
 
         }, 2000);
+
     };
 
 
@@ -94,29 +97,29 @@ class Radzikowskiego_S2_Staff extends Component {
                     <div class='row align-items-center '>
 
                         <div className='col-lg-2 col-md-offset-1  section_2_thumbnail'>
-                            <NavLink to ="/our_philosophy">
+                            <Link to ="/our_philosophy">
                                 <img src='images/filozofia.svg' className='section_2_thumbnail_img' />
                                 <p class="pt-2"> Nasza Filozofia</p>
-                            </NavLink>
+                            </Link>
                         </div>
                         <div className='col-lg-2 col-md-offset-1 section_2_thumbnail'>
-                            <NavLink to ="/extended_offer">
+                            <Link to ="/extended_offer">
                                 <img src='images/what_we_offer.svg' className='section_2_thumbnail_img' />
                                 <p className="pt-2"> Oferta</p>
-                            </NavLink>
+                            </Link>
                         </div>
                         <div className='col-lg-2 col-md-offset-1 section_2_thumbnail'>
-                            <NavLink to ="/enrollment">
+                            <Link to ="/enrollment">
                                 <img src='images/zapisy.svg' className='section_2_thumbnail_img' />
                                 <p className="pt-2"> Zapisy</p>
-                            </NavLink>
+                            </Link>
                         </div>
 
 
                         <div className='col-lg-4 col-md-offset-1 section_2_thumbnail'>
 
                             <div>
-                                <NavLink to ="/about_us">
+                                <Link to ="/about_us">
 
                                     <ul className="staff_img_wrapper flex justify-content-center p-0" ref='images_ul'>
                                         {
@@ -133,7 +136,7 @@ class Radzikowskiego_S2_Staff extends Component {
                                         }
 
                                     </ul>
-                                </NavLink>
+                                </Link>
                             </div>
 
                             <div>
