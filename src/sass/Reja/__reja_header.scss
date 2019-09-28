@@ -1,0 +1,100 @@
+
+header {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+
+.header_container {
+  max-width: 1200px;
+}
+
+.viewport_height {
+  height: 95vh;
+  width: 100vw;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.logo_header {
+    width: 3em;
+    height: 3em;
+}
+
+
+.header_content_box {
+  vertical-align: middle;
+}
+
+.header_text h1, h2 {
+  color: black
+
+}
+
+
+.navbar_color_homepage {
+  background-image: linear-gradient(to right top, #0000f8, #0050ff, #0079ff, #4d9bff, #8bbbf9);
+}
+
+.navbar_color {
+  background-image: linear-gradient(to right top, #f44040, #f84e54, #fa5c67, #fb6a79, #fb788a);
+}
+
+.navbar-collapse {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.nav-item {
+  width:100%;
+
+}
+
+.navbar a {
+  font-size: 3vw;
+  color: whitesmoke;
+
+  &:hover {
+    text-decoration: underline;
+      background: none;
+      color:whitesmoke;
+
+
+  }
+}
+
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}
+
+
+
+
+
+
+.nav_dropdown_icon {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-dark .navbar-toggler-icon{
+  width: 2em;
+  height: 2em;
+}
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+  border: 2px solid darkgrey;
+}
+
+.nav_mobile_btn {
+  padding: 10px;
+}
+
+.navbar-desktop {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

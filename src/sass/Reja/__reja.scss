@@ -1,0 +1,33 @@
+@import "./_reja_header";
+@import "./_reja_S1";
+@import "./_reja_S2";
+@import "./_reja_S3";
+@import "./_reja_S4";
+@import "./_reja_S5";
+@import "./_reja_S6";
+@import "./_reja_S7";
+@import "./_reja_S8";
+
+
+.navbar a {
+  font-size: calc(15px + 1vw);
+  color: whitesmoke;
+}
+
+@media (min-width: 1000px) {
+  .navbar a {
+    font-size: calc(15px + 0.5vw);
+    color: whitesmoke;
+  }
+}
+
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}
+
+
+  * {
+    overflow: visible;
+  }
+

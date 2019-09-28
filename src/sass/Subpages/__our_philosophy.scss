@@ -1,0 +1,59 @@
+
+.our_philosophy_bg {
+  background-image: linear-gradient(to right top, #8dedf6, #b1eeff, #d3efff, #ecf2ff, #f9f9f9);
+}
+
+.philosophy_header {
+
+  margin: 0 15px 0 15px;
+
+  .philosophy_icon_wrapper {
+    margin: 0 10px 40px 0;
+  }
+
+}
+
+.philosophy_header_wrapper {
+
+  padding: 15px;
+}
+
+
+
+.subsection_main_icon {
+  width: 30vw;
+  height: 20vh
+}
+
+
+.philosophy_icon {
+  width: 10vw;
+  height: 10vh;
+  margin-right: 10px;
+}
+
+
+.philosophy_header_pic {
+     padding: 15px;
+}
+
+.philosophy_body {
+  padding: 15px;
+}
+
+
+.quote_wrapper {
+  padding: 15px;
+}
+
+.quote_wrapper::after {
+    content: "";
+    background: url('/images/our_philosophy/quote_bg.jpeg');
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}

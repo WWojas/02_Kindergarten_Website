@@ -1,0 +1,63 @@
+
+.alert_box {
+  background-image: linear-gradient(to right top, #0090ff, #00adff, #45c5f9, #84daf3, #bdedf2);
+  color: whitesmoke;
+  border: 2px solid lightgrey;
+  -webkit-box-shadow: 10px 10px 44px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 44px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 44px 0px rgba(0,0,0,0.75);
+
+  button {
+    color: whitesmoke;
+
+    &:hover {
+      background: white;
+      color: black
+    }
+  }
+}
+
+.enrollment_bg {
+  background-image: linear-gradient(to right top, #8dedf6, #b1eeff, #d3efff, #ecf2ff, #f9f9f9);
+}
+
+.color_blue {
+  color: cornflowerblue;
+  font-weight: 600;
+}
+
+
+.flex-column-philosophy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.new_group {
+  background-image: linear-gradient(to right top, #be14f9, #ca5bfb, #d585fc, #dfabfb, #e9cef8);
+  opacity: 0.6;
+}
+
+ol {
+  list-style-type: Upper-roman;
+  margin: 20px;
+
+  li {
+    margin:10px;
+    display: inline-block;
+  }
+}
+
+table {
+  table-layout: fixed;
+
+  th {
+    white-space: nowrap;
+  }
+}
+
+.table-striped {
+  background-image: linear-gradient(to right top, #ebebeb, #f0f0f0, #f5f5f5, #fafafa, #ffffff);
+}

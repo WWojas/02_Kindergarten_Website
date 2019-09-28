@@ -1,0 +1,94 @@
+
+@media screen and (max-width: 371px) {
+  .contact_box {
+    width: 100%;
+
+  }
+}
+
+@media screen and (min-width: 372px) {
+  .contact_box {
+    width: 50%;
+  }
+
+}
+
+
+
+// Contact
+
+.flex {
+  display: flex;
+}
+
+#contact {
+  background-image: linear-gradient(to right top, #c4c4c4, #d2d2d2, #e1e1e1, #f0f0f0, #ffffff);
+  padding: 15px;
+  width: 100vw;
+}
+
+.contact_icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+
+}
+
+.contact_text {
+  width: 70%;
+}
+
+.contact_header {
+  width: 100vw;
+  height: 100px;
+  text-align: center;
+  color: whitesmoke;
+  top: 100px;
+  position: relative;
+
+}
+
+
+
+
+.form-control {
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+}
+
+#form_name, #form_email, #form_message {
+  background: transparent;
+}
+
+
+
+
+.blue_txt {
+  color: darkviolet;
+}
+
+// Map
+
+#contact_3 {
+  height: 400px;
+  background: lightgrey;
+
+}
+
+
+.map_size {
+
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+
+  iframe {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+}
+

@@ -1,0 +1,55 @@
+
+.about_bg {
+  background-image: linear-gradient(to right top, #8dedf6, #b1eeff, #d3efff, #ecf2ff, #f9f9f9);
+}
+
+h1 {
+  font-size: calc(16px + 2vw);
+  font-weight: 600;
+}
+
+.teacher_avatar {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin: 15px;
+  border-radius: 75px 0px 100px 10px;
+  -moz-border-radius: 75px 0px 100px 10px;
+  -webkit-border-radius: 75px 0px 100px 10px;
+  border: 0px solid #000000;
+  -webkit-box-shadow: 10px 10px 100px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 100px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 100px 0px rgba(0,0,0,0.75);
+
+}
+
+.teacher_desc {
+
+   p {
+     color: slategrey;
+   }
+
+}
+
+.bold_color {
+  color: steelblue;
+}
+
+.intersection {
+  background: #93B3CE;
+  border: 3px solid #0077b3;
+  padding: 15px;
+  color: whitesmoke;
+}
+
+
+.about_us_ul {
+  li {
+    list-style: none;
+  }
+}
+
+.check_icon {
+  width: 20px;
+  height: 20px;
+}

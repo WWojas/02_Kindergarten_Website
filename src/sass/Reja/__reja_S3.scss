@@ -1,0 +1,133 @@
+
+
+#programs {
+  background-image: linear-gradient(to right top, #e9cd14, #ecd540, #efdd5e, #f2e579, #f6ed92);
+  padding: 15px;
+}
+
+
+.programs_bg_1_reja {
+  background: url('/images/programs/Smoczki-1.jpg');
+  background-size: cover;
+  width: 100%;
+  height: calc(40vw + 3em);
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  .programs_text {
+    color:whitesmoke;
+    text-align: center;
+    background: blue;
+    width: 100%;
+    padding-left: 10px;
+
+    p {
+      margin: 10px 0 10px 0;
+    }
+  }
+
+}
+
+
+.programs_bg_2_reja {
+  background: url('/images/programs/Smoki-1.jpg');
+  background-size: cover;
+  width: 100%;
+  height: calc(40vw + 3em);
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+
+  .programs_text {
+    color:whitesmoke;
+    text-align: center;
+    background: #F1592A;
+    width: 100%;
+    padding-left: 10px;
+
+    p {
+      margin: 10px 0 10px 0;
+    }
+  }
+
+}
+
+.programs_bg_1_radzikowskiego {
+  background: url('/images/programs/Lajkonik-1.jpg');
+  background-size: cover;
+  width: 100%;
+  height: calc(40vw + 3em);
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  .programs_text {
+    color:whitesmoke;
+    text-align: center;
+    background: #ff8c24;
+    width: 100%;
+    padding-left: 10px;
+
+    p {
+      margin: 10px 0 10px 0;
+    }
+  }
+
+
+
+}
+
+.programs_bg_2_radzikowskiego {
+  background: url('/images/programs/Wawel-10.jpg');
+  background-size: cover;
+  width: 100%;
+  height: calc(40vw + 3em);
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  .programs_text {
+    color:whitesmoke;
+    text-align: center;
+    background:  #64bee6;
+    width: 100%;
+    padding-left: 10px;
+
+    p {
+      margin: 10px 0 10px 0;
+    }
+  }
+}
+
+
+.programs_bg_3_radzikowskiego {
+  background: url('/images/programs/Dratewka_14.jpg');
+  background-size: cover;
+  width: 100%;
+  height: calc(40vw + 3em);
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  .programs_text {
+    color:whitesmoke;
+    text-align: center;
+    background:  #DC3C3A;
+    width: 100%;
+    padding-left: 10px;
+
+    p {
+      margin: 10px 0 10px 0;
+    }
+  }
+
+}
+
+
