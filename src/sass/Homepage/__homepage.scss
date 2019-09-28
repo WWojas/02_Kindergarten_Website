@@ -74,6 +74,12 @@
   height:400px;
 }
 
+@media (min-width: 576px) {
+  .radzikowskiego, .reja {
+    height: 100vh;
+  }
+}
+
 .text-content {
   color: whitesmoke;
   border-radius: 15px;
@@ -92,6 +98,11 @@
   color: #bf8f17;
   margin: 10px;
   padding: 10px;
+
+  &:hover {
+    transform: scale(1.2);
+
+  }
 
 }
 #staff_span  {

@@ -14,7 +14,7 @@ class Homepage extends Component {
                     <div className="row">
 
                             {/* REJA */}
-                            <div className='reja col-12'>
+                            <div className='reja col-12 col-sm-6'  >
 
                                 <div className='text-content text-center'>
                                         <h4> Przedszkole<br/>przy ul. Mikołaja Reja 13 </h4>
@@ -26,7 +26,7 @@ class Homepage extends Component {
 
 
                             {/* RADZIKOWSKIEGO */}
-                            <div className='radzikowskiego col-12'>
+                            <div className='radzikowskiego col-12 col-sm-6'>
 
                                     <div className='text-content text-center'>
                                         <h4> Przedszkole <br/> przy ul. E. Radzikowskiego 92 </h4>
