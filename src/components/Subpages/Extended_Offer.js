@@ -1,6 +1,6 @@
 import React from 'react';
-import Reja_header from "../Reja/Reja_header";
 import Reja_S8_Contact from "../Reja/Reja_S8_Contact";
+import Subpage_header from "./Subpage_header";
 
 class Extended_Offer extends React.Component{
     constructor(props) {
@@ -52,7 +52,7 @@ class Extended_Offer extends React.Component{
             <div class="extended_bg_full">
 
 
-                <Reja_header class='mt-4 mb-4'/>
+                <Subpage_header class='mt-4 mb-4'/>
 
 
 

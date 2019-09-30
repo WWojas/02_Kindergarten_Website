@@ -6,13 +6,13 @@ class Reja_S6_Locations extends Component {
             <div>
 
 
-                <div className='row'>
+                <div>
                     <div class='locations_wrapper col-12' id='locations'>
 
 
                         <div className='row'>
                             <div className="col-12 text-center">
-                                <hr></hr>
+                                <hr class='hr'></hr>
                                 <h3> Nasze Przedszkole</h3>
                             </div>
 

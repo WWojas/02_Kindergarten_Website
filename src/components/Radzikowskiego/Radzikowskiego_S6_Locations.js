@@ -12,7 +12,7 @@ class Radzikowskiego_S6_Locations extends Component {
 
                         <div className='row'>
                             <div className="col-12 text-center">
-                                <hr></hr>
+                                <hr className='hr'></hr>
                                 <h3> Nasze Przedszkole</h3>
                             </div>
 

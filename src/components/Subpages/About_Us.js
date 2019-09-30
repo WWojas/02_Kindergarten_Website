@@ -1,10 +1,12 @@
 import React from 'react';
-import Subpages_header from "./Subpages_header";
 import Reja_S8_Contact from "../Reja/Reja_S8_Contact";
+import Subpage_header from "./Subpage_header";
+
 
 class About_Us extends React.Component{
     constructor(props) {
         super(props);
+
         this.state = {
             teachers: [
                 {
@@ -124,15 +126,16 @@ class About_Us extends React.Component{
         };
     }
 
+
     render() {
         return (
             <div class="about_bg">
-s
-                <Subpages_header/>
+
+                <Subpage_header />
+
 
                 <div class="container_1200">
                     <div>
-
                         <div className="col-12 text-center mt-5 mb-5">
                             <img src='/images/teachers/teacher_icon.svg' className='subsection_main_icon'/>
                             <h2> Kadra </h2>
@@ -147,9 +150,6 @@ s
 
                     </div>
                 </div>
-
-
-
 
 
                 <div className="row m-4 m-auto container_1200">

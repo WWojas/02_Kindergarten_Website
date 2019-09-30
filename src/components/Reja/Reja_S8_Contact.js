@@ -102,10 +102,18 @@ class Reja_S8_Contact extends Component {
                                     <p class='col-12 social_txt'> Krakowiaczek w Internecie </p>
 
                                     <div class='col-12'>
-                                    <img src='images/social_media/facebook.svg' class='mobile_hamburger'/>
-                                    <img src='images/social_media/Youtube.svg' class='mobile_hamburger ml-3'/>
-                                    <img src='images/social_media/Instagram.svg'class='mobile_hamburger ml-3'/>
-                                    </div>
+                                        <a href='https://www.facebook.com/przedszkolekrakowiaczek/' >
+                                            <img src='images/social_media/facebook.svg' className='mobile_hamburger'/>
+                                        </a>
+
+                                        <a href='https://www.youtube.com/channel/UCMS4Ajnwn7ub4Vs_kUBEoPg'>
+                                            <img src='images/social_media/Youtube.svg' className='mobile_hamburger ml-3'/>
+                                        </a>
+
+                                        <a href='https://www.youtube.com/channel/UCMS4Ajnwn7ub4Vs_kUBEoPg'>
+                                            <img src='images/social_media/Instagram.svg' className='mobile_hamburger ml-3'/>
+                                        </a>
+                                </div>
                                 </div>
                                 </div>
 

@@ -105,9 +105,19 @@ class Radzikowskiego_S8_Contact extends Component {
                                     <p className='col-12 social_txt'> Krakowiaczek w Internecie </p>
 
                                     <div className='col-12'>
+
+                                        <a href='https://www.facebook.com/przedszkolekrakowiaczekII/' >
                                         <img src='images/social_media/facebook.svg' className='mobile_hamburger'/>
-                                        <img src='images/social_media/Youtube.svg' className='mobile_hamburger ml-3'/>
+                                        </a>
+
+                                       <a href='https://www.youtube.com/channel/UCMS4Ajnwn7ub4Vs_kUBEoPg'>
+                                           <img src='images/social_media/Youtube.svg' className='mobile_hamburger ml-3'/>
+                                       </a>
+
+                                        <a href='https://www.youtube.com/channel/UCMS4Ajnwn7ub4Vs_kUBEoPg'>
                                         <img src='images/social_media/Instagram.svg' className='mobile_hamburger ml-3'/>
+                                        </a>
+
                                     </div>
                                 </div>
                             </div>

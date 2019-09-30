@@ -1,12 +1,12 @@
 import React from 'react';
-import Reja_header from "../Reja/Reja_header";
 import Reja_S8_Contact from "../Reja/Reja_S8_Contact";
+import Subpage_header from "./Subpage_header";
 
 class Enrollment extends React.Component{
     render() {
         return (
             <div class="enrollment_bg">
-                <Reja_header/>
+              <Subpage_header />
 
                 <div clas="row">
                     <div class="col-12 container_1200 m-auto">

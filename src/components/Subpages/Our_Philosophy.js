@@ -1,5 +1,5 @@
 import React from 'react';
-import Reja_header from "../Reja/Reja_header";
+import Subpage_header from "./Subpage_header";
 import Reja_S8_Contact from "../Reja/Reja_S8_Contact";
 
 class Our_Philosophy extends React.Component{
@@ -8,7 +8,7 @@ class Our_Philosophy extends React.Component{
             <div class="our_philosophy_bg">
 
                 <div className='container-fluid'>
-                    <Reja_header/>
+                    <Subpage_header/>
 
                     <div className=" row philosophy_header container_1200 m-auto">
 
