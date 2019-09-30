@@ -6,7 +6,8 @@ class Radzikowskiego_S3_Programs extends Component {
     render() {
         return (
 
-                <div className='row' id='programs'>
+
+                <div id='programs'>
 
                     <div className='col-12 text-center'>
                         <hr />
@@ -50,6 +51,7 @@ class Radzikowskiego_S3_Programs extends Component {
 
 
                 </div>
+
 
         )
     }

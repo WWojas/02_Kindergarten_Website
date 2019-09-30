@@ -34,13 +34,7 @@ header {
 }
 
 
-.navbar_color_homepage {
-  background-image: linear-gradient(to right top, #0000f8, #0050ff, #0079ff, #4d9bff, #8bbbf9);
-}
 
-.navbar_color {
-  background-image: linear-gradient(to right top, #f44040, #f84e54, #fa5c67, #fb6a79, #fb788a);
-}
 
 .navbar-collapse {
   width: 100%;
@@ -80,10 +74,7 @@ header {
   height: 40px;
 }
 
-.navbar-dark .navbar-toggler-icon{
-  width: 2em;
-  height: 2em;
-}
+
 
 .navbar-toggler:not(:disabled):not(.disabled) {
   border: 2px solid darkgrey;
@@ -93,8 +84,105 @@ header {
   padding: 10px;
 }
 
-.navbar-desktop {
+.navbar_desktop {
+  position: absolute;
+  padding: .5rem 1rem;
+  width: 100vw;
   list-style: none;
   padding: 0;
   margin: 0;
+
+  a {
+    font-size: calc(20px + .1vw);
+    color: whitesmoke;
+  }
+}
+
+.mobile_hamburger {
+  width: 30px;
+  height:30px;
+}
+
+.hamburger_icon_big {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+
+p.mobile_menu_txt {
+  font-size: 1em;
+  writing-mode: vertical-rl;
+  color: whitesmoke;
+  text-orientation: upright;
+}
+
+.navbar_mobile {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #f5f5f5;
+  animation: slideFromLeft 0.5s ease-out;
+
+  @keyframes slideFromLeft {
+     from {
+    left: -100vw;
+}
+    to {
+      left: 0;
+    }
+  }
+
+
+  ul li {
+    list-style: none;
+    margin: 0;
+    color:black
+  }
+
+  a {
+    font-size: calc(16px + 1vw);
+    color: #000;
+  }
+
+  .close-icon {
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    animation: rotateX 1s ease-out;
+
+  }
+
+  @keyframes rotateX {
+    from {
+      transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+      }
+
+  }
+
+  .social_btn {
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+
+    a {
+      color: whitesmoke;
+    }
+  }
+
+  .fb_btn {
+     background:  #6495ed;
+   }
+
+  .yt_btn {
+    background:  red;
+  }
+
+  .insta_btn {
+    background: #ff1493;
+  }
 }

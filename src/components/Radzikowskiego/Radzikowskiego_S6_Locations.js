@@ -6,7 +6,7 @@ class Radzikowskiego_S6_Locations extends Component {
             <div>
 
 
-                <div className='row'>
+                <div>
                     <div class='locations_wrapper col-12' id='locations'>
 
 

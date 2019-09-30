@@ -11,7 +11,7 @@ class Radzikowskiego_S8_Contact extends Component {
             <div>
 
 
-                <div class="row justify-content-center">
+                <div class="justify-content-center">
 
 
                     <div id='contact'>

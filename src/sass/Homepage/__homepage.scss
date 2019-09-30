@@ -50,12 +50,17 @@
 
 }
 
+.container-fluid {
+  width: 100% !important;
+  padding-left:0 !important;
+  padding-right: 0 !important;
+}
+
 
 .reja {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(/images/reja_pic.jpg);
   background-image: url(/images/locations/Reja/IMG_9875.jpg);
   background-size: cover;
   background-position: center;
@@ -67,8 +72,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(/images/radzikowskiego_pic.jpg);
-  background-image: url(/images/locations/Radzikowskiego/IMG_9884.jpg);
+  background-image: url(/images/locations/Radzikowskiego/IMG_9893.jpg);
   background-size: cover;
   background-position: center;
   height:50vh;
