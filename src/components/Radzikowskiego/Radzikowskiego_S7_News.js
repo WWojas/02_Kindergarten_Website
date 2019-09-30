@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 
-
 class Radzikowskiego_S7_News extends Component {
     constructor(props){
         super(props);
@@ -79,7 +78,7 @@ class Radzikowskiego_S7_News extends Component {
             <div className='row row_outer container_1200 m-auto'>
 
                 <div className='col-12 text-center'>
-                    <hr />
+                    <hr class='hr' />
                     <h3> Aktualności</h3>
                 </div>
 

@@ -99,6 +99,19 @@ class Radzikowskiego_S8_Contact extends Component {
                                 </div>
                             </div>
 
+                            <div className="row">
+                                <div className='col-12 flex flex-wrap'>
+
+                                    <p className='col-12 social_txt'> Krakowiaczek w Internecie </p>
+
+                                    <div className='col-12'>
+                                        <img src='images/social_media/facebook.svg' className='mobile_hamburger'/>
+                                        <img src='images/social_media/Youtube.svg' className='mobile_hamburger ml-3'/>
+                                        <img src='images/social_media/Instagram.svg' className='mobile_hamburger ml-3'/>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                     </div>

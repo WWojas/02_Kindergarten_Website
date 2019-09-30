@@ -5,12 +5,9 @@ import React, { Component } from 'react';
 
 class Reja_S8_Contact extends Component {
 
-
     render() {
         return (
             <div>
-
-
                 <div class="row justify-content-center">
 
 
@@ -97,6 +94,19 @@ class Reja_S8_Contact extends Component {
                                         </div>
 
                                     </div>
+                                </div>
+
+                                <div className="row">
+                                <div className='col-12 flex flex-wrap'>
+
+                                    <p class='col-12 social_txt'> Krakowiaczek w Internecie </p>
+
+                                    <div class='col-12'>
+                                    <img src='images/social_media/facebook.svg' class='mobile_hamburger'/>
+                                    <img src='images/social_media/Youtube.svg' class='mobile_hamburger ml-3'/>
+                                    <img src='images/social_media/Instagram.svg'class='mobile_hamburger ml-3'/>
+                                    </div>
+                                </div>
                                 </div>
 
                             </div>
