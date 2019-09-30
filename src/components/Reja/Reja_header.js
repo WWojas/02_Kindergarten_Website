@@ -2,102 +2,155 @@ import React, { Component } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 
 class Reja_header extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            mobileMenuVisible: false
+        }
+    }
+
     render() {
         return (
             <div>
                 <header>
 
                     {/* Desktop*/}
-                    <nav className="navbar navbar-dark navbar_color d-none d-md-block">
+                    <nav className="d-none d-md-block header_container">
 
-                        <div className="navbar-header text-center header_container">
-                            <a className='d-flex d-xl-none navbar_brand flex align-items-center justify-content-center m-0 p-0'
-                               href='#'>
+                        <ul class="navbar_desktop flex align-items-center">
+
+                            <li class='flex'>
                                 <img src="images/Logo-2.png"
                                      className="d-inline-block align-bottom logo_header m-0 p-0"
-                                     alt='przedszkole krakowiaczek'/><span
-                                className="m-0 p-0"> Krakowiaczek</span></a>
+                                     alt='przedszkole krakowiaczek'/>
+                                <Link to ="/" className='dropdown-item'> Krakowiaczek </Link>
+                            </li>
 
+                            <li>
+                                <Link to ="/reja#programs" className='dropdown-item'> Oferta </Link>
+                            </li>
 
-                            <ul className="navbar-desktop flex align-items-center">
+                            <li >
+                                <Link to ="/reja#locations" className='dropdown-item'> Galeria </Link>
+                            </li>
 
-                                <a className='d-none d-xl-flex navbar_brand flex align-items-center justify-content-center m-0 p-0'
-                                   href='#'>
-                                    <img src="images/Logo-2.png"
-                                         className="d-inline-block align-bottom logo_header m-0 p-0"
-                                         alt='przedszkole krakowiaczek'/><span
-                                    className="m-0 p-0"> Krakowiaczek</span>
-                                </a>
+                            <li >
+                                <Link to ="/reja#news" className='dropdown-item'>Aktualności </Link>
+                            </li>
 
-                                <li>
-                                    <Link to="/reja#programs" className='dropdown-item'> Oferta </Link>
-                                </li>
+                            <li>
+                                <Link to ="/reja#contact" className='dropdown-item'> Kontakt </Link>
+                            </li>
 
-                                <li>
-                                    <Link to="/reja#locations" className='dropdown-item'> Nasze Przedszkole </Link>
-                                </li>
+                        </ul>
 
-                                <li>
-                                    <Link to="/reja#news" className='dropdown-item'>Aktualności </Link>
-                                </li>
-
-                                <li>
-                                    <Link to="/reja#contact" className='dropdown-item'> Kontakt </Link>
-                                </li>
-
-                            </ul>
-                        </div>
                     </nav>
-
 
                     {/* Mobile*/}
-                    <nav className="navbar navbar-dark navbar_color d-block d-md-none w-100">
+                    <nav className="navbar_desktop d-block d-md-none w-100">
+                        {this.state.mobileMenuVisible &&
 
-                        <a className='navbar_brand flex align-items-center justify-content-center m-0 p-0' href='#'>
-                            <img src="images/Logo-2.png"
-                                 className="d-inline-block align-bottom logo_header m-0 p-0"
-                                 alt='przedszkole krakowiaczek'/><span className="m-0 p-0"> Krakowiaczek</span></a>
+                        <div class='navbar_mobile'>
 
-                        <button className='navbar-toggler col-12 flex p-0 mr-2' type='button'
-                                data-toggle='collapse' data-target='#mobile_nav_menu'>
+                            <img src='images/mobile_menu/error.svg' class='mobile_hamburger close-icon' onClick={ () => this.setState({mobileMenuVisible: false})}/>
 
-                            <div className="col-12 nav_mobile_btn ">
-                                <span>  Menu  </span>
+                            <div class='mt-5 flex'>
+
+                                <ul class='social d-inline-block'>
+
+                                    <div class='flex align-items-center'>
+                                        <img src='images/mobile_menu/orientation.svg' class='hamburger_icon_big'/>
+                                        <p> Mapa Strony </p>
+                                    </div>
+
+                                    <li className="flex align-items-center" onClick={ () => this.setState({mobileMenuVisible: false})}>
+                                        <img src='/images/mobile_menu/homepage.svg' class='mobile_hamburger' />
+                                        <Link to="/" className='dropdown-item'> Strona główna </Link>
+                                    </li>
+
+                                    <li className="flex align-items-center" onClick={ () => this.setState({mobileMenuVisible: false})}>
+                                        <img src='/images/mobile_menu/offer.svg' className='mobile_hamburger'/>
+                                        <Link to="/reja#programs" className='dropdown-item'> Oferta </Link>
+                                    </li>
+
+                                    <li className="flex align-items-center" onClick={ () => this.setState({mobileMenuVisible: false})}>
+                                        <img src='/images/mobile_menu/gallery.svg' className='mobile_hamburger'/>
+                                        <Link to="/reja#locations" className='dropdown-item'>Galeria </Link>
+                                    </li>
+
+                                    <li className="flex align-items-center" onClick={ () => this.setState({mobileMenuVisible: false})}>
+                                        <img src='/images/mobile_menu/news.svg' className='mobile_hamburger'/>
+                                        <Link to="/reja#news" className='dropdown-item'>Aktualności </Link>
+                                    </li>
+
+                                    <li className="flex align-items-center" onClick={ () => this.setState({mobileMenuVisible: false})}>
+                                        <img src='/images/mobile_menu/contact.svg' className='mobile_hamburger'/>
+                                        <Link to="/reja#contact" className='dropdown-item'> Kontakt </Link>
+                                    </li>
+                                </ul>
+
                             </div>
 
-                        </button>
 
-                        <div className='collapse navbar-collapse ' id='mobile_nav_menu'>
+                            <div className='mt-5 flex'>
 
-                            <ul className="navbar-nav mr-auto text-center text-md-right">
-                                <li className="nav-item">
-                                    <Link to="/" className='dropdown-item'> Strona główna </Link>
-                                </li>
+                                <ul className='social d-inline-block'>
 
-                                <li className="nav-item">
-                                    <Link to="/reja#programs" className='dropdown-item'> Oferta
-                                    </Link>
-                                </li>
+                                    <div className='flex align-items-center'>
+                                        <img src='images/mobile_menu/social_media_icon.svg' className='hamburger_icon_big'/>
+                                        <p> Nasze Social Media </p>
+                                    </div>
 
-                                <li className="nav-item">
-                                    <Link to="/reja#locations" className='dropdown-item'> Nasze Przedszkole
-                                    </Link>
-                                </li>
+                                    <li className="flex align-items-center" onClick={ () => this.setState({mobileMenuVisible: false})}>
+                                        <button class='social_btn fb_btn flex m-1'>
+                                            <img src='images/mobile_menu/facebook.svg' class='mobile_hamburger'/>
+                                            <Link to="https://www.facebook.com/przedszkolekrakowiaczek/" className='dropdown-item'> Facebook </Link> </button>
+                                    </li>
 
-                                <li className="nav-item">
-                                    <Link to="/reja#news" className='dropdown-item'> Aktualności
-                                    </Link>
-                                </li>
+                                    <li className="flex align-items-center" onClick={ () => this.setState({mobileMenuVisible: false})}>
+                                        <button className='social_btn yt_btn flex m-1'>
+                                            <img src='images/mobile_menu/youtube.svg' className='mobile_hamburger'/>
+                                            <Link to="https://www.youtube.com/channel/UCMS4Ajnwn7ub4Vs_kUBEoPg" className='dropdown-item'> You Tube </Link></button>
+                                    </li>
 
-                                <li className="nav-item">
-                                    <Link to="/reja#contact" className='dropdown-item'> Kontakt
-                                    </Link>
-                                </li>
+                                    <li className="flex align-items-center" onClick={ () => this.setState({mobileMenuVisible: false})}>
+                                        <button className='social_btn insta_btn flex m-1'>
+                                            <img src='images/mobile_menu/instagram.svg' className='mobile_hamburger'/>
+                                            <Link to="/" className='dropdown-item'> Instagram </Link></button>
+                                    </li>
+                                </ul>
 
 
-                            </ul>
+                            </div>
+                        </div>
+
+
+
+
+                        }
+
+                        <div class='flex align-self-start p-3'>
+                            <div className='col-2 text-center'>
+
+                                <img src='images/mobile_menu/menu.svg' className='mobile_hamburger'
+                                     onClick={() => !this.state.mobileMenuVisible ? this.setState({mobileMenuVisible: true}) :
+                                         this.setState({mobileMenuVisible: false})}/>
+
+                                <p class='mobile_menu_txt'> Menu </p>
+
+
+                            </div>
+
+                            <div class='col-10 flex'>
+                                <img src="images/Logo-2.png"
+                                     className="d-inline-block align-bottom logo_header m-0 p-0"
+                                     alt='przedszkole krakowiaczek'/>
+                                <Link to ="/" className='dropdown-item'> Krakowiaczek </Link>
+                            </div>
                         </div>
                     </nav>
+
+
 
                 </header>
 

@@ -63,27 +63,27 @@ class Radzikowskiego_header extends Component {
                                         <p> Mapa Strony </p>
                                     </div>
 
-                                    <li className="flex align-items-center">
+                                    <li className="flex align-items-center" onClick={ () => this.setState({mobileMenuVisible: false})}>
                                         <img src='/images/mobile_menu/homepage.svg' class='mobile_hamburger' />
                                         <Link to="/" className='dropdown-item'> Strona główna </Link>
                                     </li>
 
-                                    <li className="flex align-items-center">
+                                    <li className="flex align-items-center" onClick={ () => this.setState({mobileMenuVisible: false})}>
                                         <img src='/images/mobile_menu/offer.svg' className='mobile_hamburger'/>
                                         <Link to="/radzikowskiego#programs" className='dropdown-item'> Oferta </Link>
                                     </li>
 
-                                    <li className="flex align-items-center">
+                                    <li className="flex align-items-center" onClick={ () => this.setState({mobileMenuVisible: false})}>
                                         <img src='/images/mobile_menu/gallery.svg' className='mobile_hamburger'/>
                                         <Link to="/radzikowskiego#locations" className='dropdown-item'>Galeria </Link>
                                     </li>
 
-                                    <li className="flex align-items-center">
+                                    <li className="flex align-items-center" onClick={ () => this.setState({mobileMenuVisible: false})}>
                                         <img src='/images/mobile_menu/news.svg' className='mobile_hamburger'/>
                                         <Link to="/radzikowskiego#news" className='dropdown-item'>Aktualności </Link>
                                     </li>
 
-                                    <li className="flex align-items-center">
+                                    <li className="flex align-items-center" onClick={ () => this.setState({mobileMenuVisible: false})}>
                                         <img src='/images/mobile_menu/contact.svg' className='mobile_hamburger'/>
                                         <Link to="/radzikowskiego#contact" className='dropdown-item'> Kontakt </Link>
                                     </li>
@@ -101,19 +101,19 @@ class Radzikowskiego_header extends Component {
                                         <p> Nasze Social Media </p>
                                     </div>
 
-                                    <li className="flex align-items-center">
+                                    <li className="flex align-items-center" onClick={ () => this.setState({mobileMenuVisible: false})}>
                                         <button class='social_btn fb_btn flex m-1'>
                                             <img src='images/mobile_menu/facebook.svg' class='mobile_hamburger'/>
                                             <Link to="https://www.facebook.com/przedszkolekrakowiaczekII/" className='dropdown-item'> Facebook </Link> </button>
                                     </li>
 
-                                    <li className="flex align-items-center">
+                                    <li className="flex align-items-center" onClick={ () => this.setState({mobileMenuVisible: false})}>
                                         <button className='social_btn yt_btn flex m-1'>
                                             <img src='images/mobile_menu/youtube.svg' className='mobile_hamburger'/>
                                             <Link to="https://www.youtube.com/channel/UCMS4Ajnwn7ub4Vs_kUBEoPg" className='dropdown-item'> You Tube </Link></button>
                                     </li>
 
-                                    <li className="flex align-items-center">
+                                    <li className="flex align-items-center" onClick={ () => this.setState({mobileMenuVisible: false})}>
                                         <button className='social_btn insta_btn flex m-1'>
                                             <img src='images/mobile_menu/instagram.svg' className='mobile_hamburger'/>
                                             <Link to="/" className='dropdown-item'> Instagram </Link></button>
