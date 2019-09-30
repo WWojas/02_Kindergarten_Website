@@ -113,7 +113,7 @@ render() {
                     </div>
 
                     <div className="slidecontainer">
-                        {/*<input type="range" min="5" max="11" value={event.target.value} id='slider' onChange={this.adjustHours}/>*/}
+                        <input type="range" min="5" max="11" value={this.state.hours} id='slider' onChange={ (e) => this.adjustHours(e)}/>
 
 
                         <div className="checkbox">

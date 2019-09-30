@@ -10,7 +10,7 @@ class Radzikowskiego_S3_Programs extends Component {
                 <div id='programs'>
 
                     <div className='col-12 text-center'>
-                        <hr />
+                        <hr class='hr'/>
                         <h3> Grupy Krakowiaczka</h3>
                     </div>
 

@@ -93,20 +93,15 @@ class Reja_S4_Pricing extends Component {
 
 
 render() {
-
-
     return (
-
             <div className='row '>
 
                 <div className='col-12 text-center '>
                     <h3> Oferta</h3>
-
                 </div>
 
 
                 <div className='col-12 text-center'>
-
 
                     <div className="hours_image">
                         <img src='images/pricing_calendar.svg' className='pricing_calendar'/>
@@ -114,7 +109,7 @@ render() {
                     </div>
 
                     <div className="slidecontainer">
-                        {/*<input type="range" min="5" max="11" value={event.target.value} id='slider' onChange={this.adjustHours}/>*/}
+                        <input type="range" min="5" max="11" value={this.state.hours} id='slider' onChange={ (e) => this.adjustHours(e)}/>
 
 
 

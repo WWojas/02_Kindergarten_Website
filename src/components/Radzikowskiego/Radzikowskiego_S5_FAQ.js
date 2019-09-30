@@ -1,7 +1,20 @@
 import React, { Component } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
+import { UncontrolledCollapse, Button, CardBody, Card } from 'reactstrap';
+
 
 class Radzikowskiego_S5_FAQ extends Component {
+    constructor(props) {
+        super(props);
+        this.toggle = this.toggle.bind(this);
+        this.state = { collapse: false };
+    }
+
+    toggle() {
+        this.setState(state => ({ collapse: !state.collapse }));
+    }
+
+
     render() {
         return (
             <div>
@@ -13,100 +26,83 @@ class Radzikowskiego_S5_FAQ extends Component {
 
                 </div>
 
-                <div class="row">
-                    <div class="col">
+                <Button color="info" id="toggler1" style={{ marginBottom: '5px', width: '100%', textAlign: 'left' }}>
+                    W jakich godzinach czynne jest przedszkole?
+                </Button>
+                <UncontrolledCollapse toggler="#toggler1">
+                    <Card>
+                        <CardBody>
+                            Przedszkole  czynne jest od godziny 6.30 rano do godziny 17.30 przez 12 miesięcy w roku
+                        </CardBody>
+                    </Card>
+                </UncontrolledCollapse>
 
-                    <div id="accordion">
 
-                        <div className="card">
-                            <div className="card-header">
-                                <a className="card-link" data-toggle="collapse" href="#collapseOne">
-                                    W jakich godzinach czynne jest przedszkole?
-                                </a>
-                            </div>
-                            <div id="collapseOne" className="collapse" data-parent="#accordion">
-                                <div className="card-body">
-                                    Przedszkole  czynne jest od godziny 6.30 rano do godziny 17.30 przez 12 miesięcy w roku.
-                                </div>
-                            </div>
+                <Button color="info" id="toggler2" style={{ marginBottom: '5px', width: '100%', textAlign: 'left' }}>
+                    Ilu nauczycieli przypada na grupę dzieci?
+                </Button>
+                <UncontrolledCollapse toggler="#toggler2">
+                    <Card>
+                        <CardBody>
+                            Grupy dzieci licza około 20 dzieci. Każdą grupą opiekuje się dwóch nauczycieli przez cały dzień.
+                        </CardBody>
+                    </Card>
+                </UncontrolledCollapse>
+
+                <Button color="info" id="toggler3" style={{ marginBottom: '5px', width: '100%', textAlign: 'left' }}>
+                    Jak  wygląda żywienie dzieci w Krakowiaczku?
+                </Button>
+                <UncontrolledCollapse toggler="#toggler3">
+                    <Card>
+                        <CardBody>
+                            Przedszkole współpracuje z firmą cateringową F.H.U Kario specjalizującą się w zywieniu placówek przedszkolnych i żłobków.
+                          <br /> <br />  Jadłospis przygotowywany jest przez dietetyka z uwzględnieniem bilansu kalorycznego oraz wartości odżywczych.
+                        </CardBody>
+                    </Card>
+                </UncontrolledCollapse>
+
+
+                <Button color="info" id="toggler4" style={{ marginBottom: '5px', width: '100%', textAlign: 'left' }}>
+                    Czy wyżywienie dzieci uwzględnia potrzeby alergików?
+                </Button>
+                <UncontrolledCollapse toggler="#toggler4">
+                    <Card>
+                        <CardBody>
+                            Jeżeli Dziecko cierpi na alergię pokarmową, Rodzice zobowiązani są dostarczyć
+                            specyfikację lekarską oraz podać szczegółowe informacje na ten temat w Karcie przyjęcia dziecka.
+                            <br /> <br />   Sposób żywienia dzieci alergicznych ustalany jest indywidualnie z Rodzicami przy zawarciu Umowy.
+                            Na podstawie specyfikacji lekarskiej firma cateringowa dostarcza posiłki z uwzględnieniem specjalnej diety.
+                        </CardBody>
+                    </Card>
+                </UncontrolledCollapse>
+
+
+                <Button color="info" id="toggler5" style={{ marginBottom: '5px', width: '100%', textAlign: 'left' }}>
+                    W jaki sposób organizowane są wycieczki lub wyjścia dzieci poza teren placówki?
+                </Button>
+                <UncontrolledCollapse toggler="#toggler5">
+                    <Card>
+                        <CardBody>
+                            Dzieci uczestniczą w zaplanowanych wycieczkach po uprzedniej konsultacji z rodzicami, za ich pisemną zgodą.
+                            <br /> <br />  Codzienne spacery oraz wycieczki krótkodystansowe są organizowane bez konieczności uzyskania tego typu zgody.
+                        </CardBody>
+                    </Card>
+                </UncontrolledCollapse>
+
+                <Button color="info" id="toggler6" style={{ marginBottom: '5px', width: '100%', textAlign: 'left' }}>
+                    Czy przedszkole oferuje zajecia dodatkowe?
+                </Button>
+                <UncontrolledCollapse toggler="#toggler6">
+                    <Card>
+                        <CardBody>
+                            Tak, przedszkole oferuje zajęcia dodatkowe. Pełna lista dostępnych aktywności znajduje się <Link to ="/extended_offer" class='anchor_link'> tutaj </Link>
+                        </CardBody>
+                    </Card>
+                </UncontrolledCollapse>
+
+
                         </div>
 
-                        <div className="card">
-                            <div className="card-header">
-                                <a className="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                                    Ilu nauczycieli przypada na grupę dzieci?
-                                </a>
-                            </div>
-                            <div id="collapseTwo" className="collapse" data-parent="#accordion">
-                                <div className="card-body">
-                                    Grupy dzieci licza około 20 dzieci. Każdą grupą opiekuje się dwóch nauczycieli prze cały dzień.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="card">
-                            <div className="card-header">
-                                <a className="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                                    Jak  wygląda żywienie dzieci w Krakowiaczku?
-                                </a>
-                            </div>
-                            <div id="collapseThree" className="collapse" data-parent="#accordion">
-                                <div className="card-body">
-                                    Przedszkole współpracuje z firmą cateringową F.H.U Kario specjalizującą się w zywieniu placówek przedszkolnych i żłobków.
-                                    Jadłospis przygotowywany jest przez dietetyka z uwzględnieniem bilansu kalorycznego oraz wartości odżywczych.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="card">
-                            <div className="card-header">
-                                <a className="collapsed card-link" data-toggle="collapse" href="#collapseFour">
-                                    Czy wyżywienie dzieci uwzględnia potrzeby alergików?
-                                </a>
-                            </div>
-                            <div id="collapseFour" className="collapse" data-parent="#accordion">
-                                <div className="card-body">
-                                    Obowiązkiem rodzica jest podanie wszelkich informacji o alergiach dziecka Takie dane przechowywane są w bazie danych, a na ich podstawie sporządzana jest lista zasad, których opiekunowie muszą przestrzegać w pracy z dzieckiem alergicznym.
-                                    Jeżeli Dziecko cierpi na alergię pokarmową, Rodzice zobowiązani są dostarczyć specyfikację lekarską oraz podać szczegółowe informacje na ten temat w Karcie przyjęcia dziecka. Sposób żywienia dzieci alergicznych ustalany jest indywidualnie z Rodzicami przy zawarciu Umowy.
-                                    Na podstawie specyfikacji lekarskiej firma cateringowa dostarcza posiłki z uwzględnieniem specjalnej diety.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="card">
-                            <div className="card-header">
-                                <a className="collapsed card-link" data-toggle="collapse" href="#collapseFive">
-                                   W jaki sposób organizowane są wycieczki lub wyjścia dzieci poza teren placówki?
-                                </a>
-                            </div>
-                            <div id="collapseFive" className="collapse" data-parent="#accordion">
-                                <div className="card-body">
-                                    Dzieci będą zabierane na zaplanowane wycieczki tylko po uprzedniej konsultacji z rodzicami i za ich pisemną zgodą.
-                                    Codzienne spacery i krótkie wycieczki nie wymagają takiej zgody.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="card">
-                            <div className="card-header">
-                                <a className="collapsed card-link" data-toggle="collapse" href="#collapseSix">
-                                    Czy przedszkole oferuje zajecia dodatkowe?
-                                </a>
-                            </div>
-                            <div id="collapseSix" className="collapse" data-parent="#accordion">
-                                <div className="card-body">
-                                    Tak, przedszkole oferuje zajęcia dodatkowe. Pełna lista dostępnych aktywności znajduje się <Link to ="/extended_offer" class='anchor_link'> tutaj </Link>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                    </div>
-                </div>
-
-            </div>
         )
     }
 }

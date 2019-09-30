@@ -1,5 +1,5 @@
 import React from 'react';
-import Reja_header from "../Reja/Reja_header";
+import Subpages_header from "./Subpages_header";
 import Reja_S8_Contact from "../Reja/Reja_S8_Contact";
 
 class About_Us extends React.Component{
@@ -127,8 +127,8 @@ class About_Us extends React.Component{
     render() {
         return (
             <div class="about_bg">
-
-                <Reja_header/>
+s
+                <Subpages_header/>
 
                 <div class="container_1200">
                     <div>
