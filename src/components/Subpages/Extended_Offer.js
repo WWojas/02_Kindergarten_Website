@@ -8,9 +8,12 @@ class Extended_Offer extends React.Component{
         this.state = {
             KangarooIsVisible: false,
             DancingIsVisible: false,
-            ChemistryIsVisible: false,
             BreathingIsVisible: false,
             WorkingHoursIsVisible: false,
+            CodingIsVisible: false,
+            MathIsVisible: false,
+            museumIsVisible: false,
+
             ActivitiesIsVisible: false,
             KrakowIsVisible: false,
             showMore: false,
@@ -278,7 +281,82 @@ class Extended_Offer extends React.Component{
                 </div>
 
 
-                 {/* Additional Activities*/}
+                 {/* Standard Activities*/}
+
+                <div className="col-12 container_1200 mb-5">
+                        <div className="col-12 container_1200 mb-5">
+                            <section>
+                                <div className="row">
+                                    <div className="col-12 text-center">
+                                        <img src='/images/extended_offer/standard_activities.svg' className='philosophy_icon'/>
+
+                                        <div className="d-block d-sm-flex">
+                                            <h2 className="special_additional_activities"> Zajęcia Bezpłatne </h2>
+
+                                    </div>
+                                    </div>
+
+
+                                    <div className="col-12 col-sm-6 col-xl-3 text-center activity_wrapper img_kangaroo">
+                                        <img src='/images/extended_offer/rytmika.svg'
+                                             className="philosophy_icon mb-2"/>
+                                        <h2><strong> Rytmika </strong></h2>
+
+                                        <p>Zajęcia muzyczne "Muzyka dla smyka" (30 minut tygodniowo, w każdej grupie) </p>
+
+
+                                </div>
+
+
+                                    <div className="col-12 col-sm-6 col-xl-3 text-center activity_wrapper img_dancing">
+                                        <img src='/images/extended_offer/gym.svg' className="philosophy_icon mb-2"/>
+                                        <h2><strong> Gimnastyka Korekcyjna </strong></h2>
+                                        <p> Zajęcia ogólnorozwojowe prowadzone przeez Damiana Smotera (mgr AWF)</p>
+
+
+
+                                    </div>
+
+
+                                    <div
+                                        className="col-12 col-sm-6 col-xl-3 text-center activity_wrapper img_breathing">
+                                        <img src='/images/extended_offer/english.svg'
+                                             className="philosophy_icon mb-2"/>
+                                        <h2><strong> Język Angielski </strong></h2>
+                                        <p> Zajęcia prowadzone dwa razy w tygodniu przez szkołę języka angielskiego </p>
+
+                                    </div>
+
+
+                                    <div className="col-12 col-sm-6 col-xl-3 text-center activity_wrapper img_math">
+                                        <img src='/images/extended_offer/coding.svg'
+                                             className="philosophy_icon mb-2"/>
+                                        <h3 class='new_txt'> NOWOŚĆ! </h3>
+                                        <p> <strong> Kodowanie na Dywanie </strong></p>
+                                        <p> Kształcenie umiejętności kodowania poprzez zabawę z wykorzystaniem różnorodnych środków dydaktycznych (plansze, gry, programowalne zabawki.)</p>
+
+                                        <p> Zapraszamy do relacji wideo z zajęć: <a
+                                            href='https://www.youtube.com/watch?v=7IeglUtigv4&feature=youtu.be'> KLIK! </a>
+                                        </p>
+
+                                    </div>
+
+                                    <div className="col-12 col-sm-6 col-xl-3 text-center activity_wrapper img_math">
+                                        <img src='/images/extended_offer/museum.svg'
+                                             className="philosophy_icon mb-2"/>
+                                        <p><strong> Kultura Dostępna </strong></p>
+                                        <p> Cykl lekcji muzealnych realizowanych w Muzeum Narodowym, Sukiennicach, Ośrodku Kultury Europejskiej Europeum, Domu Jana Matejki dla dzieci w wieku 5-6 lat.</p>
+
+
+                                    </div>
+
+                                </div>
+                            </section>
+                                </div>
+                </div>
+
+
+                {/*  Additional Actvities*/}
 
                 <div class="col-12 container_1200 mb-5">
                 <section>
@@ -288,159 +366,93 @@ class Extended_Offer extends React.Component{
 
                         <div class="d-block d-sm-flex">
                         <h2 class="special_additional_activities"> Zajęcia Dodatkowe </h2>
-                        <button className="tooltip_wrapper" onMouseOver={this.tooltipHandler} onMouseOut={this.tooltipHandler}> ? </button>
-                        </div>
-                        {
-                            this.state.showTooltip &&
-
-                            <h6 class="tooltip_inner">  Zajęcia dodatkowe to pozaprzedszkolne aktywności dla dzieci, oferowane
-                            przez profesjonalne podmioty w ramach umów zawieranych indywidualnie z rodzicami </h6>
 
 
-                        }
-
-
+                    </div>
                     </div>
 
 
 
 
-                    <div className="col-12 col-sm-6 col-xl-3 text-center img_kangaroo">
+                    <div className="col-12 col-sm-6 col-xl-3 text-center activity_wrapper img_kangaroo">
                        <img src='/images/extended_offer/kangaroo.svg'  className="philosophy_icon mb-2"/>
                         <h2><strong> Drużyna Kangura </strong></h2>
 
                         <p>Ruchowe zajęcia fizyczno-ruchowe z piłkami</p>
 
-                        <div className="d-block d-md-none">
-                        <button class="btn" onClick={() => !this.state.KangarooIsVisible ? this.setState({ KangarooIsVisible: true}) : this.setState({ KangarooIsVisible:false})}> WIĘCEJ </button>
-                    {
 
-                        this.state.KangarooIsVisible &&
-
-                            <div>
-                                <ul class="showMoreWrapper text-left">
-                                    <li> <strong> Koszt za zajęcia:</strong> 8zł </li>
-                                    <li> <strong> Liczba zajęć w semestrze:</strong> 14 </li>
-                                    <li> <strong> Podmiot prowadzący:</strong> Przedszkole i piłka S.C.</li>
-                                </ul>
-
-                            </div>
-
-                    }
-                        </div>
-                        <div className="d-none d-md-block">
                             <ul className="showMoreWrapper text-left">
-                                <li><strong> Koszt za zajęcia:</strong> 8zł</li>
+                                <li><strong> Koszt za zajęcia:</strong> 9,50zł</li>
                                 <li><strong> Liczba zajęć w semestrze:</strong> 14</li>
                                 <li><strong> Podmiot prowadzący:</strong> Przedszkole i piłka S.C.</li>
                             </ul>
 
-                        </div>
                     </div>
 
 
 
 
-                    <div className="col-12 col-sm-6 col-xl-3 text-center img_dancing">
+                    <div className="col-12 col-sm-6 col-xl-3 text-center activity_wrapper img_dancing">
                         <img src='/images/extended_offer/dancing.svg' className="philosophy_icon mb-2"/>
                         <h2><strong> Zajęcia Taneczne </strong></h2>
                         <p> Nauka tańca, w tym podstaw tańca towarzyskiego w parach</p>
 
-                        <div className="d-block d-md-none">
-                        <button class="btn" onClick={() => !this.state.DancingIsVisible ? this.setState({ DancingIsVisible: true}) : this.setState({ DancingIsVisible:false})}> WIĘCEJ </button>
-
-                        {
-
-                            this.state.DancingIsVisible &&
-
-                            <div>
                                 <ul class="showMoreWrapper text-left">
                                     <li> <strong> Koszt za zajęcia:</strong> 6zł </li>
                                     <li> <strong> Liczba zajęć w semestrze:</strong> 14 </li>
                                     <li> <strong> Podmiot prowadzący:</strong> Małopolska Akademia Tańca i Rekreacji</li>
 
                                 </ul>
-                            </div>
-                        }
-                        </div>
-
-                        <div class="d-none d-md-block">
-                            <ul className="showMoreWrapper text-left">
-                                <li><strong> Koszt za zajęcia:</strong> 6zł</li>
-                                <li><strong> Liczba zajęć w semestrze:</strong> 14</li>
-                                <li><strong> Podmiot prowadzący:</strong> Małopolska Akademia Tańca i Rekreacji</li>
-
-                            </ul>
-                        </div>
 
                     </div>
 
 
 
-                    <div className="col-12 col-sm-6 col-xl-3 text-center img_chemistry">
-                        <img src='/images/extended_offer/chemistry.svg' className="philosophy_icon mb-2"/>
-                        <h2><strong> Eksperymenty Naukowe </strong></h2>
-                        <p> Nauka podstaw fizyki i chemii w formie zabawy dla dzieci</p>
-
-                        <div className="d-block d-md-none">
-                        <button class="btn" onClick={() => !this.state.ChemistryIsVisible ? this.setState({ ChemistryIsVisible: true}) : this.setState({ ChemistryIsVisible:false})}> WIĘCEJ </button>
-                        {
-
-                            this.state.ChemistryIsVisible &&
-
-                            <div>
-                                <ul class="showMoreWrapper text-left">
-                                    <li> <strong> Koszt za zajęcia:</strong> 10zł </li>
-                                    <li> <strong> Liczba zajęć w semestrze:</strong> 14 </li>
-                                    <li> <strong> Podmiot prowadzący:</strong> RoboTim </li>
-                                </ul>
-                            </div>
-
-                        }
-                        </div>
-
-                        <div class="d-none d-md-block">
-                            <ul className="showMoreWrapper text-left">
-                                <li><strong> Koszt za zajęcia:</strong> 10zł</li>
-                                <li><strong> Liczba zajęć w semestrze:</strong> 14</li>
-                                <li><strong> Podmiot prowadzący:</strong> RoboTim</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="col-12 col-sm-6 col-xl-3 text-center img_breathing">
+                    <div className="col-12 col-sm-6 col-xl-3 text-center activity_wrapper img_breathing">
                         <img src='/images/extended_offer/breathing.svg' className="philosophy_icon mb-2"/>
                         <h2><strong> Krakowska Jaskinia Solna </strong></h2>
                         <p> Profilaktyka układu oddechowego (jesień/zima)</p>
 
-                        <div class="d-block d-md-none">
-                        <button class="btn" onClick={() => !this.state.BreathingIsVisible ? this.setState({ BreathingIsVisible: true}) : this.setState({ BreathingIsVisible:false})}> WIĘCEJ </button>
-                        {
 
-                            this.state.BreathingIsVisible &&
-
-                            <div>
-                                <ul class="showMoreWrapper text-left">
-                                    <li> <strong> Koszt za zajęcia:</strong> 11zł </li>
-                                    <li> <strong> Liczba zajęć w semestrze:</strong> 20 </li>
-                                    <li> <strong> Podmiot prowadzący:</strong>  Krakowska Jaskinia Solna </li>
-                                </ul>
-
-                            </div>
-
-                        }
-                        </div>
-
-                        <div class="d-none d-md-block">
                             <ul className="showMoreWrapper text-left">
                                 <li><strong> Koszt za zajęcia:</strong> 11zł</li>
                                 <li><strong> Liczba zajęć w semestrze:</strong> 20</li>
                                 <li><strong> Podmiot prowadzący:</strong> Krakowska Jaskinia Solna</li>
                             </ul>
 
-                        </div>
                     </div>
 
+
+                    <div className="col-12 col-sm-6 col-xl-3 text-center activity_wrapper img_math">
+                    <img src='/images/extended_offer/calculator.svg' className="philosophy_icon mb-2"/>
+                        <h3 class='new_txt'> NOWOŚĆ! </h3>
+                    <h2><strong> Zajęcia Matematyczne </strong></h2>
+                    <p> Nauka matematyki dla dzieci od 4 roku życia, przy wykorzystaniu autorskiej, angażującej metody dydaktycznej N. Cywińskiego, prowadzone w 6 osobowych grupach wraz z indywidualną ewaluacją.</p>
+
+
+                        <ul className="showMoreWrapper text-left">
+                            <li><strong> Koszt za zajęcia:</strong> 25zł</li>
+                            <li><strong> Liczba zajęć w tygodniu:</strong> 4</li>
+                            <li><strong> Podmiot prowadzący:</strong> Matema</li>
+                        </ul>
+
+                </div>
+
+
+
+                    <div className="col-12 col-sm-6 col-xl-3 text-center activity_wrapper img_philharmony">
+                        <img src='/images/extended_offer/violin.svg' className="philosophy_icon mb-2"/>
+                        <h2><strong> Koncerty Muzycze </strong></h2>
+                        <p> Spektakle muzyczne dla dzieci z udziałem profesjonalnych muzyków.</p>
+
+                            <ul className="showMoreWrapper text-left">
+                                <li><strong> Koszt za zajęcia:</strong> 10zł</li>
+                                <li><strong> Liczba zajęć w roku szkolnym:</strong> 5</li>
+                                <li><strong> Podmiot prowadzący:</strong> Mobilna Filharmonia</li>
+                            </ul>
+
+
+                    </div>
 
 
                 </div>

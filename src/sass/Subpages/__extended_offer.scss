@@ -42,43 +42,29 @@
   height: 200px;
 }
 
-.img_kangaroo {
+.activity_wrapper {
   border-radius:15px;
-  padding:15px;
-  margin: 10px 0 10px 0;
-  background-image: linear-gradient(to right top, #ffb91a, #fcc848, #f9d56c, #f8e28e, #f9edaf);
-  box-shadow: 0 20px 50px -25px rgba(0, 0, 0, 1);
-
-}
-
-.img_chemistry {
-  border-radius:15px;
-  background-image: linear-gradient(to right top, #cb11ff, #d055fa, #d47bf3, #d79bec, #d8b8e3);
   padding:15px;
   margin: 10px 0 10px 0;
   box-shadow: 0 20px 50px -25px rgba(0, 0, 0, 1);
 }
 
-.img_breathing {
-  border-radius:15px;
-  background-image: linear-gradient(to right top, #9aa6b5, #b0b5c3, #c4c5d1, #d8d5df, #ebe6ed);
-  padding:15px;
-  margin: 10px 0 10px 0;
-  box-shadow: 0 20px 50px -25px rgba(0, 0, 0, 1);
-
-}
-
-.img_dancing {
-  border-radius:15px;
-  background-image: linear-gradient(to right top, #17ac09, #42bc48, #63cc71, #82db96, #a4e9b9);
-  padding:15px;
-  margin: 10px 0 10px 0;
-  box-shadow: 0 20px 50px -25px rgba(0, 0, 0, 1);
-
-}
 
 .showMoreWrapper {
   margin: 10px;
   border-radius:15px;
 }
 
+.new_txt {
+  position: absolute;
+  top: 36px;
+  background: indianred;
+  font-size: 1.5em;
+  padding: 10px;
+  color: whitesmoke;
+  border-radius: 10px;
+  right: 0;
+  transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  -webkit-transform: rotate(50deg);
+}
