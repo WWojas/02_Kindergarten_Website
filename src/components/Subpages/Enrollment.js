@@ -12,30 +12,11 @@ class Enrollment extends React.Component{
                     <div class="col-12 container_1200 m-auto">
 
                         <div>
-                            <div>
-
-                                <div class="col-12 text-center mt-4 mb-5">
-                                    <div className="col-12 text-center">
-                                        <img src='/images/enrollment/calendar_enrollment_icon.svg' className='subsection_main_icon'/>
-                                        <h2> Zapisy</h2>
-                                    </div>
 
 
 
-                                    <div className="col-12 text-center alert_box p-5 mb-5 mt-5">
-                                        <p> Szanowni Państwo, </p>
-                                        <p> W związku z oficjalnym ogłoszeniem naboru na rok szkolny 2019/2020 serdecznie zapraszamy do
-                                            wypełnienia oraz przesłania na nasz adres korespondencyjny poniższego
-                                            </p>
-                                        <img src='/images/enrollment/form.svg' class="round_icon"/>
-                                        <button className="btn"> Formularza Aplikacyjnego </button>
-                                    </div>
-                            </div>
-
-
-
-                            <div class="col-12">
-
+                            <div class="col-12 text-center">
+                                <img src='/images/enrollment/school.svg' className='subsection_main_icon mb-3'/>
                             <h3 class="text-center"> Przedszkole Krakowiaczek prowadzi aktualnie nabór do placówek położonych w następujących lokalizacjach:</h3>
 
                             <ol class="text-center color_blue">
@@ -48,7 +29,7 @@ class Enrollment extends React.Component{
                         </div>
 
                     </div>
-                        </div>
+
 
 
 
@@ -57,11 +38,10 @@ class Enrollment extends React.Component{
 
                     <div class="col-12">
 
+                        <img src='/images/reja_pic.jpg' className="round_icon img-fluid  d-block"/>
+                        <h3 className="col-12 text-center">Placówka przy ul. Reja</h3>
                         <table className="table table-striped table-hover">
-
                             <div class="flex-column-philosophy">
-                                <img src='/images/reja_pic.jpg' className="round_icon img-fluid  d-none d-sm-block"/>
-                                <h3 className="col-12 text-center">Placówka przy ul. Reja</h3>
                             </div>
 
                             <thead className="thead-light">
@@ -79,13 +59,13 @@ class Enrollment extends React.Component{
                                 <td>Smoki</td>
                                 <td>Dzieci w wieku 5-6 lat</td>
                                 <td className="d-none d-sm-block">Aktywna</td>
-                                <td>2 wolne miejsca</td>
+                                <td>brak wolnych miejsc</td>
                             </tr>
-                            <tr>
+                            <tr class='open_spot'>
                                 <td>Smoczki</td>
                                 <td>Dzieci w wieku 3-4 lat</td>
                                 <td className="d-none d-sm-block">Aktywna</td>
-                                <td>6 wolnych miejsc</td>
+                                <td>2 wolne miejsca</td>
                             </tr>
                             </tbody>
                         </table>
@@ -97,11 +77,11 @@ class Enrollment extends React.Component{
 
                     <div className="col-12">
 
+                        <img src='/images/radzikowskiego_pic.jpg' className="round_icon img-fluid  d-block"/>
+                        <h3 className="col-12 text-center">Placówka przy ul. Radzikowskiego </h3>
                         <table className="table table-striped table-hover">
 
                             <div className="flex-column-philosophy">
-                                <img src='/images/radzikowskiego_pic.jpg' className="round_icon img-fluid  d-none d-sm-block"/>
-                                <h3 className="col-12 text-center">Placówka przy ul. Radzikowskiego </h3>
                             </div>
 
 
@@ -133,11 +113,11 @@ class Enrollment extends React.Component{
                                 <td className="d-none d-sm-block">Aktywna</td>
                                 <td>brak wolnych miejsc</td>
                             </tr>
-                            <tr className="new_group">
-                                <td> </td>
-                                <td>Dzieci w wieku od 2,5 lat</td>
-                                <td className="d-none d-sm-block">W przygotowaniu</td>
-                                <td>22 wolne miejsca</td>
+                            <tr>
+                                <td>Barbakan</td>
+                                <td>Dzieci w wieku 5-6 lat</td>
+                                <td className="d-none d-sm-block">Aktywna</td>
+                                <td>brak wolnych miejsc</td>
                             </tr>
 
 

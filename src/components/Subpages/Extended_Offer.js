@@ -66,7 +66,7 @@ class Extended_Offer extends React.Component{
                     </div>
                     <div className="philosophy_header_wrapper">
 
-                        <h2 className="text-center mb-3"> Oferta </h2>
+                        <h2 className="text-center mb-3"> Oferta na rok szkolny 2019/2020</h2>
                         <p class="text-center"> <strong> Poniżej przedstawiamy najważniejsze informacje na temat Przedszkola </strong> </p>
                     </div>
 
