@@ -41,10 +41,7 @@ class Radzikowskiego_S6_Locations extends Component {
 
                             {/* 3rd row - Big Pic*/}
                             <div className="locations_img col-12 img_wide flex align-items-center d-none d-sm-flex">
-                                <div class="img_wide_text text-center">
-                                    <p> " Mów dziecku, ze jest dobre, ze moze, ze potrafi "</p>
-                                    <p className="p_small"> Janusz Korczak </p>
-                                </div>
+
                             </div>
                         </div>
 

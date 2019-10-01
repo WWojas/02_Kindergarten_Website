@@ -19,6 +19,7 @@ class Reja_S3_Programs extends Component {
 
                     {/* Grupa Smoczki*/}
 
+                    <div class='row'>
                     <div className='col-12 col-md-6'>
 
                         <div className="programs_bg_1_reja">
@@ -44,6 +45,7 @@ class Reja_S3_Programs extends Component {
                 </div>
 
                 </div>
+            </div>
 
         )
     }

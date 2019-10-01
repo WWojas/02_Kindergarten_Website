@@ -15,6 +15,7 @@ class Radzikowskiego_S3_Programs extends Component {
                     </div>
 
                     {/* Grupa Lajkonik*/}
+                    <div class='row'>
                     <div className='col-12 col-md-4'>
 
                         <div className="programs_bg_1_radzikowskiego">
@@ -47,6 +48,7 @@ class Radzikowskiego_S3_Programs extends Component {
                                 <p className='section_3_programs_border_1'> Grupa Dratewka (5-6 lat) </p>
                             </div>
                         </div>
+                    </div>
                     </div>
 
 

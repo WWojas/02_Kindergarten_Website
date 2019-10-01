@@ -21,16 +21,6 @@ class About_Us extends React.Component{
 
                 },
 
-                { name: 'MONIKA',
-                    lastname: 'GARULA',
-                    position: 'Nauczycielka',
-                    img: 'Monika_Garula1',
-                    desc: 'Ukończyła studia licencjackie - Wychowanie Przedszkolne i Edukacja wczesnoszkolna oraz studia magisterskie Pedagogika szkolna z terapią pedagogiczną.\n' +
-                        '                                    Ponadto, uzyskała I stopień w państwowej Szkole Muzycznej im.Mieczysława Karłowicza w Krakowie z gry na wiolonczeli.\n' +
-                        '                                    W swojej pracy z dziećmi stosuje różnorodne metody i techniki pedagogiczne. Jej zajęcia pełne są dźwięków, kolorów, ruchu, uśmiechu. Wykorzystuje ciekawe pomoce dydaktyczne, pozwalające rozwijać dziecięcą wyobraźnię poprzez bazowanie na konkretach i doświadczanie wielozmysłowe.\n' +
-                        '                                    Emanuje spokojem, ciepłem i pozytywnym nastawieniem do świata i ludzi. Interesuje się literaturą, tańcem towarzyskim, muzyką klasyczną i filmową.'
-                },
-
                 { name: 'ALICJA',
                     lastname: 'KWAŚNY',
                     position: 'Nauczycielka',
@@ -75,17 +65,6 @@ class About_Us extends React.Component{
                         '                                    Od kilku lat trenuje sztuki walki (MMA oraz BJJ). Interesuje się muzyką, posiada kolekcję 150 albumów od muzyki klasycznej do współczesnej. Wolny czas spędza na koncertach muzycznych lub wycieczkach górskich.'
                 },
 
-                { name: 'JOANNA',
-                    lastname: 'WOŹNIAK',
-                    position: 'Nauczycielka',
-                    img: 'Joanna_Wozniak1',
-                    desc: 'Ukończyła studia magisterskie na Uniwersytecie Pedagogicznym w Krakowie na kierunku Pedagogika Społeczno-Opiekuńcza a także studia podyplomowe  z zakresu Pedagogiki Przedszkolnej i Wczesnoszkolnej oraz z Pedagogiki Specjalnej -Edukacji i rehabilitacji osób z niepełnosprawnością intelektualną ( oligofrenopedagogiką).\n' +
-                        '                                    Od czasów studenckich jest związana z Polskim Czerwonym Krzyżem, dzięki któremu zdobyła doświadczenie pedagogiczne na koloniach letnich organizowanych dla dzieci i młodzieży.\n' +
-                        '                                    W przedszkolu pełni funkcję opiekuna "Klubu Wiewiórka PCK" w ramach którego kształtuje u przedszkolaków empatię, postawę niesienia pomocy oraz nawyki dbania o zdrowie i bezpieczeństwo.\n' +
-                        '                                    Lubi podróżować, fotografować, zwiedzać wystawy i muzea, oglądać sztuki teatralne a w wolnym czasie oddaje się lekturze, długim spacerom lub spotkaniom z przyjaciółmi. Miłośniczka zwierząt i muzyki.'
-
-                },
-
                 { name: 'NATALIA',
                     lastname: 'KICZURA',
                     position: 'Nauczycielka',
@@ -99,15 +78,6 @@ class About_Us extends React.Component{
                 },
 
 
-                { name: 'MARIA',
-                    lastname: 'KACZMAREK',
-                    position: 'Dyrektor Pedagogiczny',
-                    img: 'Maria_Kaczmarek1',
-                    desc: 'Nauczyciel dyplomowany, magister pedagogiki, ukończyła Pedagogikę Przedszkolną i Wczesnoszkolną na Uniwersytecie Pedagogiczną.\n' +
-                        '                                    Wieloletnia dyrektorka Samorządowego Przedszkola nr.94 w Nowej Hucie.\n' +
-                        '                                    W przedszkolu jest dyrektorem d/s pedagogicznych, sprawuje nadzór nad nauczycielkami stażystkami. Jest bardzo doświadczona, posiada ogromną wiedzę merytoryczną, ciekawy warsztat pracy, jest wsparciem dla młodej kadry rozpoczynającej pracę w zawodzie nauczyciela.\n' +
-                        '                                    Propagatorka zdrowego odżywiania, medycyny naturalnej, lubi wycieczki piesze. '
-                },
 
 
                 { name: 'VIOLETTA',

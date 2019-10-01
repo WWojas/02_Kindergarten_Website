@@ -10,7 +10,7 @@ class Reja_S2_Staff extends Component {
             text: ["Rozwoju", "Odpoczynku", "Śmiechu", "Zabawy"],
             index: 0,
 
-            staff: [ "Aleksandra_Brozyna", "Dominika_Serwa", "Natalia_Kiczura", "Kinga_Kaczmarek", "Alicja_Kwasny", "Joanna_Wozniak", "Monika_Garula", "Maria_Kaczmarek" , "Dorota_Szastak", "Violetta_Wojas" ],
+            staff: [ "Aleksandra_Brozyna", "Dominika_Serwa", "Natalia_Kiczura", "Alicja_Kwasny", "Maria_Kaczmarek" , "Dorota_Szastak", "Violetta_Wojas" ],
             indexStaff: 0,
             indexPrev: -1
 

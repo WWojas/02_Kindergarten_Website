@@ -19,7 +19,7 @@ class Radzikowskiego_header extends Component {
 
                         <ul class="navbar_desktop flex align-items-center">
 
-                            <li class='flex'>
+                            <li class='flex align-items-center'>
                                 <img src="images/Logo-2.png"
                                      className="d-inline-block align-bottom logo_header m-0 p-0"
                                      alt='przedszkole krakowiaczek'/>
@@ -141,11 +141,13 @@ class Radzikowskiego_header extends Component {
 
                             </div>
 
-                            <div class='col-10 flex'>
+                            <div class='col-10 text-center'>
+
                                 <img src="images/Logo-2.png"
                                      className="d-inline-block align-bottom logo_header m-0 p-0"
                                      alt='przedszkole krakowiaczek'/>
                                 <Link to ="/" className='dropdown-item'> Krakowiaczek </Link>
+
                             </div>
                         </div>
                     </nav>

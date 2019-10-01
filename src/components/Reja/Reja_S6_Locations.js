@@ -41,10 +41,6 @@ class Reja_S6_Locations extends Component {
 
                             {/* 3rd row - Big Pic*/}
                             <div className="locations_img col-12 img_wide flex align-items-center d-none d-md-flex">
-                                <div class="img_wide_text text-center">
-                                    <h1><em>  " Mów dziecku, ze jest dobre, ze moze, ze potrafi "  </em></h1>
-                                    <h1 class="p_small"> Janusz Korczak </h1>
-                                </div>
                             </div>
                         </div>
 

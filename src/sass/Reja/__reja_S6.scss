@@ -25,10 +25,11 @@ figcaption {
   width: 100vw;
   height: 120vh;
   margin-top: 20px;
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('/images/locations/Reja/IMG_9873.jpg');
+  background-image: url('/images/locations/Reja/IMG_9873.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 .img_wide_text p{
   color: darkslategrey;
